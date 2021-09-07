@@ -84,6 +84,7 @@ header h1{
     flex-direction: column;
     background-color:#394F49 ;
     overflow-x: hidden;
+    overflow-y:hidden;
 }
 .main-text h3,p{
     font-family: 'Azeret Mono', monospace;
