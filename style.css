@@ -116,6 +116,7 @@ header h1{
         min-height: 50vh;
         flex-direction: row-reverse;
         justify-content: space-between;
+        overflow-y:hidden;
     }
     .main-text {
         width: 100%;
