@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --font-family-1:font-family: 'Azeret Mono', monospace;
+    --font-famiy-2:font-family: 'Roboto', sans-serif;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+header{
+    min-height: 100vh;
+    background-image: url(images/main-bak.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    overflow-x: hidden;
+}
+.navbar-links ul,li,a{
+    display: flex;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    justify-content:space-between;
+    padding: 8px;
+    font-family: var(--font-family-1);
+    color: #fff;
+    position: relative;
+}
+.navbar-links a::after{
+    content:" ";
+    background-color: #fff;
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform:scaleX(0);
+    transform-origin: left;
+    transition: transform 200ms ease;
+}
+.navbar-links a:hover::after{
+    transform: scaleX(1);
+}
+header h1{
+    color: #fff;
+    font-family:'Azeret Mono', monospace; ;
+    position:absolute;
+    top:40%;
+    font-size:2.2rem;
+    left:30%;
+    transform: translate(-30%,-30%);
+}
+.header-text a{
+    position:absolute;
+    top:50%;
+    left:30%;
+    transform: translate(-30%,-30%);
+    border: 2px solid #fff;
+    color: white;
+    padding: 10px 70px;
+    display: inline-block;
+    font-size: 16px;
+    transition: background 400ms ease;
+    transition: color 200ms ease;
+}
+.header-text a:hover{
+    background-color: #fff;
+    color: black;
+}
+#main{
+    min-height: 100vh; 
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+.main-1{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color:#394F49 ;
+    overflow-x: hidden;
+}
+.main-text h3,p{
+    font-family: 'Azeret Mono', monospace;
+    color: #fff;
+    text-align: center;
+    padding-top: 30px;
+    font-size: 1.4rem;
+    padding-bottom: 50px;
+}
+#img-div img{   
+    width: 100%;
+    height: 100%;
+}
+@media (min-width: 900px){
+    .navbar-links ul,li,a{
+        font-size:1.6rem;
+    }
+    header h1{
+        color: #fff;
+        font-family:'Azeret Mono', monospace; ;
+        position:absolute;
+        top:40%;
+        font-size:4rem;
+        left:30%;
+        transform: translate(-30%,-30%);
+    }
+    .main-1,.main-2{
+        display: flex ;
+        min-height: 50vh;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    .main-text {
+        width: 100%;
+    }
+    #img-div{ 
+        width: 100%;
+        min-height: 100%;
+    }
+}
+.main-2{
+    min-height: 70vh;
+    background-color: #101818;
+}
+footer{
+    min-height: 40vh;
+    background-color: #07070A;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding:30px 20px 0px 20px;
+}
+.footer-icons #tribute-link{
+    transition: color 200ms ease;
+    cursor: pointer;
+    position: relative;
+}
+.footer-icons{
+    cursor: pointer;
+}
+.footer-icons a:hover{
+    color: rgb(0, 255, 42);
+}
